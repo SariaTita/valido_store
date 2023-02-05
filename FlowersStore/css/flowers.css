@@ -1,0 +1,91 @@
+:root{
+    --dark-color: #19283f;
+    --pink-color:#ecb8ba;
+    --pink-color2:#e67a7e;
+    --black-color: #2d3340;
+    --g-border-width: 1px;
+    --g-border-width-lg: 2px;
+    --green: #0a4630;
+    --green1:#0a4630;
+    --white-off:#efefef;
+    --grey:#878787;
+    --colorGray: #d0d0d0;
+}
+body{
+    font-family: 'Gentium Plus', serif;
+    color: rgb(7, 4, 7);
+    font-size: 12px;
+    /* background-color: var(--green1); */
+    color:var(--dark-color);
+    width: 100%;
+}
+/* start navbar */
+.navbar{
+    background-color:var(--green1);
+
+}
+.navbar .navbar-nav .nav-link{
+    color:var(--white-off);
+
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.nav-tabs .nav-link:hover,
+.nav-tabs .nav-link.active,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--pink-color);
+}
+.navbar-brand{
+    color: var(--white-off);
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: var(--pink-color);
+}
+.navbar .navbar-toggler{
+    color: var(--white-off);
+    font-size: medium;
+    border-color: white;
+
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--pink-color);
+}
+.nav-tabs .nav-link{
+    color:var(--green);
+}
+/* end navbar */
+h5{
+    display: inline;
+
+}
+h5 span{
+    color:black;
+    font-size: larger;
+    font-weight: bold;
+}
+img{
+    width: 230 px;
+    height: 228px;
+    /* transition: all;
+    transform: scale(1.2,1.5); */
+}
+.alert{
+    border: #878787;
+    background-color:var(--green1);
+    color: var(--white-off);
+}
+.accordion:focus,
+.accordion
+{
+    box-sizing: unset;
+    color: var(--green);
+}
+footer{
+    width: 100%;
+    height: 100%;
+    background-color: #0a4630;
+}

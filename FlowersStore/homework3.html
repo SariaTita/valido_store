@@ -1,0 +1,32 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VueJS</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="vue.global.js"></script>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<section class="container" id="app">
+
+    <button v-model="color in colors"> {{color}} </button>
+     <h1 :style="'background-color:'+ {{color}}"> Hello World </h1>
+</section>
+</body>
+<script>
+    var app = Vue.createApp({
+        data(){
+            return {
+                colors:[
+                    "red","yellow","green"
+                ]
+            }
+        }
+    })
+    app.mount("#app")
+</script>
+</html>
